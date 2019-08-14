@@ -54,13 +54,20 @@
 		"keywords": {
 			"patterns": [{
 					"name": "keyword.control.gherkin.en",
-					"match": "(Feature:|Background:|Scenario:|Scenario Outline:|Examples:)"
+					"match": "^\\s*(Feature:|Background:|Scenario:|Scenario Outline:|Examples:)"
 				}, {
 					"name": "keyword.control.gherkin.de",
+<<<<<<< Updated upstream
 					"match": "(Funktionalität:|Grundlage:|Szenario:|Szenariogrundriss:|Beispiele:)"
 			  }, {
 					"name": "keyword.control.gherkin.pt",
 					"match": "(Funcionalidade:|Segundo plano:|Cenário:|Esboço do cenário:|Exemplos:)"
+=======
+					"match": "^\\s*(Funktionalität:|Grundlage:|Szenario:|Szenariogrundriss:|Beispiele:)"
+				}, {
+					"name": "keyword.control.gherkin.ru",
+					"match": "^\\s*(Функция:|Функциональность:|Функционал:|Свойство:|Предыстория:|Контекст:|Сценарий:|Структура сценария:Контекст:|Примеры:|Функционал:)"
+>>>>>>> Stashed changes
 			}]
 		},
 		"languages": {
@@ -72,21 +79,31 @@
 		"steps": {
 			"patterns": [{
 					"name": "keyword.other.gherkin.en",
-					"match": "(Given|When|Then|And|But)"
+					"match": "^\\s*(Given|When|Then|And|But)"
 				 }, {
 					"name": "keyword.other.gherkin.de",
+<<<<<<< Updated upstream
 					"match": "(Angenommen|Wenn|Dann|Und|Aber)"
 			   }, {
 					"name": "keyword.other.gherkin.pt",
 					"match": "(Dado|Quando|Então|E|Mas)"
+=======
+					"match": "^\\s*(Angenommen|Wenn|Dann|Und|Aber)"
+				}, {
+					"name": "keyword.other.gherkin.ru",
+					"match": "^\\s*(\\* |Допустим|Дано|Пусть|Когда |Если |Тогда|Затем|И |К тому же|А |НО |Иначе|Также )"
+>>>>>>> Stashed changes
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.gherkin",
+			"name": "string.quoted.gherkin",
 			"patterns": [
 				{
 					"name": "string.quoted.double",
-					"match": "\".*\""
+					"match": "\".*?\""
+				},{
+					"name": "string.quoted.single",
+					"match": "'.*?'"
 				}
 			]
 		},
